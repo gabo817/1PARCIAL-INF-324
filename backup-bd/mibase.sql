@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-04-2021 a las 06:02:10
+-- Tiempo de generación: 05-04-2021 a las 08:30:32
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -49,7 +49,8 @@ INSERT INTO `nota` (`ci`, `sigla`, `nota1`, `nota2`, `nota3`, `notafinal`) VALUE
 (6666, 'INF131', 9, 19, 17, 45),
 (7777, 'INF111', 20, 19, 35, 74),
 (8888, 'INF121', 27, 24, 35, 86),
-(9999, 'INF131', 10, 6, 30, 46);
+(9999, 'INF131', 10, 6, 30, 46),
+(6666, 'INF111', 20, 24, 20, 64);
 
 -- --------------------------------------------------------
 
@@ -113,12 +114,6 @@ INSERT INTO `usuario` (`ci`, `usuario`, `contrasena`, `color`, `rol`) VALUES
 --
 -- Índices para tablas volcadas
 --
-
---
--- Indices de la tabla `nota`
---
-ALTER TABLE `nota`
-  ADD PRIMARY KEY (`ci`);
 
 --
 -- Indices de la tabla `persona`

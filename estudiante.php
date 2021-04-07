@@ -1,5 +1,7 @@
 <?php
 include "conexion.inc.php";
+include "cabecera.inc.php";
+include "menu.inc.php";
 $ci=$_GET["ci"];
 $resultado = mysqli_query($con, "select * from nota WHERE ci = '".$ci."'");
 ?>
@@ -36,3 +38,6 @@ echo "</tr>";
 }
 ?>
 </table>
+<?php
+include "pie.inc.php";
+?>

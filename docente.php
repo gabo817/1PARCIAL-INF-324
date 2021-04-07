@@ -1,6 +1,9 @@
 <?php
 error_reporting(0);
 include "conexion.inc.php";
+include "cabecera.inc.php";
+include "menu.inc.php";
+
 $ci=$_GET["ci"];
 $deptos = array("LP","CB","SC","OR","PT","CH","TJ","BE","PD",);
 $siglas=mysqli_query($con, "SELECT sigla from nota GROUP BY nota.sigla");
@@ -39,3 +42,6 @@ for ($i = 0; $i < $count; $i++) {
 ?>
 
 </table>
+<?php
+include "pie.inc.php";
+?>
